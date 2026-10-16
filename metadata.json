@@ -1,0 +1,6 @@
+{
+  "name": "MS HƯƠNG AI",
+  "description": "Đào tạo AI & Prompt thực chiến cho giáo dục, hành chính và công việc hằng ngày.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

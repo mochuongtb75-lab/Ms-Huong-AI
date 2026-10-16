@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <!-- Background & lighting gradients reflecting the luxury studio atmosphere -->
+    <linearGradient id="wallGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBE3D7" />
+      <stop offset="35%" stop-color="#DFD5C5" />
+      <stop offset="70%" stop-color="#D2C5B2" />
+      <stop offset="100%" stop-color="#C5B6A0" />
+    </linearGradient>
+
+    <!-- Warm sunlight beam -->
+    <linearGradient id="sunbeam" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#FFF0DB" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FFE7C7" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Pillar and marble texture -->
+    <linearGradient id="marblePillar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2D7C7" />
+      <stop offset="50%" stop-color="#F2EAE0" />
+      <stop offset="100%" stop-color="#D7C9B6" />
+    </linearGradient>
+
+    <!-- Table stone gradient -->
+    <linearGradient id="stoneTable" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E3D7C5" />
+      <stop offset="50%" stop-color="#D6C7B2" />
+      <stop offset="100%" stop-color="#C2B099" />
+    </linearGradient>
+
+    <!-- Silk Ivory Cape & Blazer suit gradients -->
+    <linearGradient id="ivoryBlazerLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#F8F6F2" />
+      <stop offset="85%" stop-color="#ECE7DE" />
+      <stop offset="100%" stop-color="#DFD9CD" />
+    </linearGradient>
+
+    <linearGradient id="ivoryLapelLeft" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F6F3EC" />
+      <stop offset="100%" stop-color="#EAE3D6" />
+    </linearGradient>
+
+    <linearGradient id="ivoryLapelRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F7F5EE" />
+      <stop offset="100%" stop-color="#E4DCCD" />
+    </linearGradient>
+
+    <linearGradient id="capeShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DDD5C6" />
+      <stop offset="100%" stop-color="#EEE9DF" />
+    </linearGradient>
+
+    <!-- Gold Brooch Gradient -->
+    <linearGradient id="goldLuxury" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE494" />
+      <stop offset="35%" stop-color="#D6A645" />
+      <stop offset="70%" stop-color="#FCE18B" />
+      <stop offset="100%" stop-color="#A67B24" />
+    </linearGradient>
+
+    <!-- Warm radiant skin tone -->
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE8DB" />
+      <stop offset="50%" stop-color="#FCD5C2" />
+      <stop offset="100%" stop-color="#F4C4AB" />
+    </linearGradient>
+
+    <linearGradient id="lipTone" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CE515E" />
+      <stop offset="50%" stop-color="#DE5E6C" />
+      <stop offset="100%" stop-color="#BA3C4B" />
+    </linearGradient>
+
+    <!-- Hair shine gradient -->
+    <linearGradient id="hairDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D282A" />
+      <stop offset="30%" stop-color="#1A1718" />
+      <stop offset="70%" stop-color="#121011" />
+      <stop offset="100%" stop-color="#221E20" />
+    </linearGradient>
+
+    <!-- Subtle blur filter for realistic depth of field -->
+    <filter id="bgBlur">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ================= BACKGROUND STUDIO ARCHITECTURE ================= -->
+  <rect width="600" height="800" fill="url(#wallGradient)" />
+
+  <!-- Background Architecture Pillars (Warm, bright luxury studio) -->
+  <g filter="url(#bgBlur)" opacity="0.85">
+    <!-- Left column / arch -->
+    <rect x="-40" y="0" width="160" height="800" fill="url(#marblePillar)" />
+    <path d="M-40 180 Q60 120 120 180 L120 0 L-40 0 Z" fill="#D9CCBA" opacity="0.6" />
+    <!-- Right luxury arch pillar -->
+    <rect x="460" y="0" width="160" height="800" fill="url(#marblePillar)" />
+    <path d="M460 220 Q530 150 620 220 L620 0 L460 0 Z" fill="#D9CCBA" opacity="0.6" />
+    <!-- Soft warm sunbeams through window -->
+    <polygon points="0,0 350,0 200,800 0,800" fill="url(#sunbeam)" />
+    
+    <!-- White flower vase on left console table -->
+    <ellipse cx="65" cy="380" rx="35" ry="12" fill="#BAAA94" />
+    <path d="M40 380 L48 300 L82 300 L90 380 Z" fill="#EAE3D6" />
+    <!-- Flowers cluster -->
+    <circle cx="50" cy="270" r="16" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="75" cy="260" r="18" fill="#FFFFFF" opacity="0.95" />
+    <circle cx="65" cy="240" r="15" fill="#FAF7F0" />
+    <circle cx="85" cy="285" r="14" fill="#FFFFFF" opacity="0.85" />
+    <circle cx="40" cy="295" r="12" fill="#F4EDE0" />
+    <circle cx="60" cy="255" r="5" fill="#DCCFB8" />
+  </g>
+
+  <!-- ================= FOREGROUND: MS MỘC HƯƠNG PORTRAIT ================= -->
+
+  <!-- 1. CAPE COAT BACK & SLEEVELESS OVERLAY -->
+  <g id="cape-and-body-base">
+    <!-- Left cape drape falling over arm -->
+    <path d="M190 410 C160 450, 110 520, 80 660 C65 725, 60 780, 50 800 L220 800 C205 700, 195 560, 190 410 Z" fill="url(#capeShadow)" />
+    <!-- Right cape drape falling over arm -->
+    <path d="M410 410 C440 450, 490 520, 520 660 C535 725, 540 780, 550 800 L380 800 C395 700, 405 560, 410 410 Z" fill="url(#capeShadow)" />
+    <!-- Outer Cape drape highlight folds -->
+    <path d="M85 640 C100 700, 120 750, 140 800" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7" />
+    <path d="M515 640 C500 700, 480 750, 460 800" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7" />
+  </g>
+
+  <!-- 2. ARMS & SLEEVES (SPLIT CAPE-BLAZER DESIGN) -->
+  <g id="arms-skin">
+    <!-- Left bare forearm through blazer slit -->
+    <path d="M185 520 C180 580, 175 640, 185 710 C195 760, 220 790, 250 800 L300 800 C265 775, 240 730, 230 650 C225 590, 220 540, 215 500 Z" fill="url(#skinTone)" />
+    <!-- Right bare forearm through blazer slit -->
+    <path d="M415 520 C420 580, 425 640, 415 710 C405 760, 380 790, 350 800 L300 800 C335 775, 360 730, 370 650 C375 590, 380 540, 385 500 Z" fill="url(#skinTone)" />
+  </g>
+
+  <!-- 3. MAIN TAILORED IVORY SUIT / BLAZER -->
+  <g id="blazer-torso">
+    <!-- Main dress body -->
+    <path d="M210 420 C210 460, 205 530, 215 620 C225 700, 235 750, 245 800 L355 800 C365 750, 375 700, 385 620 C395 530, 390 460, 390 420 Z" fill="url(#ivoryBlazerLight)" stroke="#D8CFC0" stroke-width="1.5" />
+
+    <!-- Inner V-Neck Undershirt -->
+    <path d="M270 410 L300 480 L330 410 Z" fill="#FDFBF7" stroke="#E3DACB" stroke-width="1" />
+
+    <!-- Cross-over V Blazer Cut (Double Breasted Cut with Clean Peak Lapel) -->
+    <!-- Right Lapel (Under) -->
+    <path d="M300 395 L370 425 L345 525 L380 520 L300 640 L265 525 Z" fill="url(#ivoryLapelRight)" stroke="#D5CCBD" stroke-width="1.5" />
+    
+    <!-- Left Lapel (Over - prominent crossover) -->
+    <path d="M300 395 L225 430 L250 535 L215 535 L310 660 L355 650 L345 560 Z" fill="url(#ivoryLapelLeft)" stroke="#CEC5B5" stroke-width="1.8" />
+
+    <!-- Subtle Blazer Seams and Darting -->
+    <path d="M255 600 C260 670, 270 740, 275 800" stroke="#D3C9B8" stroke-width="1.2" fill="none" />
+    <path d="M345 600 C340 670, 330 740, 325 800" stroke="#D3C9B8" stroke-width="1.2" fill="none" />
+    
+    <!-- Crisp Collar edges -->
+    <path d="M245 425 L290 390 L300 440 Z" fill="#FFFFFF" opacity="0.9" />
+    <path d="M355 425 L310 390 L300 440 Z" fill="#EBE3D3" opacity="0.8" />
+  </g>
+
+  <!-- 4. SIGNATURE LUXURY GOLD PEARL BROOCH ON LEFT LAPEL -->
+  <g id="brooch" transform="translate(372, 520)">
+    <!-- Branch stem -->
+    <path d="M-5 15 Q10 0 25 -20" stroke="url(#goldLuxury)" stroke-width="3" fill="none" stroke-linecap="round" />
+    <!-- Delicate golden leaves -->
+    <path d="M0 10 Q12 5 8 -5 Q0 2 -5 10 Z" fill="url(#goldLuxury)" />
+    <path d="M10 2 Q22 -3 18 -14 Q10 -6 10 2 Z" fill="url(#goldLuxury)" />
+    <path d="M18 -8 Q30 -12 25 -24 Q18 -15 18 -8 Z" fill="url(#goldLuxury)" />
+    <!-- Luminous center pearl -->
+    <circle cx="8" cy="-2" r="5" fill="#FFFDF8" stroke="#D6A645" stroke-width="1.2" />
+    <circle cx="6.5" cy="-3.5" r="1.5" fill="#FFFFFF" />
+    <!-- Secondary small pearls -->
+    <circle cx="18" cy="-14" r="3.5" fill="#FFFDF8" stroke="#D6A645" stroke-width="1" />
+  </g>
+
+  <!-- 5. ELEGANT RESTING HANDS AT TABLE -->
+  <g id="hands-resting">
+    <!-- Left wrist & hand clasped gracefully -->
+    <ellipse cx="275" cy="790" rx="35" ry="18" fill="url(#skinTone)" />
+    <!-- Right hand resting on top -->
+    <ellipse cx="320" cy="785" rx="38" ry="17" fill="url(#skinTone)" />
+    <!-- Fingers contour -->
+    <path d="M295 780 C315 780, 335 782, 350 788" stroke="#E5B299" stroke-width="1.5" fill="none" />
+    <path d="M290 792 C310 792, 330 794, 345 800" stroke="#E5B299" stroke-width="1.5" fill="none" />
+  </g>
+
+  <!-- 6. NECK & COLLARBONE -->
+  <g id="neck">
+    <path d="M272 320 L272 405 C285 418, 315 418, 328 405 L328 320 Z" fill="url(#skinTone)" />
+    <!-- Delicate shadow under chin -->
+    <path d="M272 325 Q300 352 328 325 Z" fill="#E8B49B" opacity="0.65" />
+    <!-- Gentle collarbone highlights -->
+    <path d="M278 395 Q295 402 300 405 Q305 402 322 395" stroke="#E0A98F" stroke-width="1.5" fill="none" opacity="0.6" />
+  </g>
+
+  <!-- 7. HEAD & HAIR (AUTHENTIC FACIAL SHAPE OF MS HƯƠNG) -->
+  <g id="head-base">
+    <!-- Soft, youthful, rounded feminine face -->
+    <path d="M232 230 C228 175, 250 140, 300 140 C350 140, 372 175, 368 230 C365 285, 345 332, 300 334 C255 332, 235 285, 232 230 Z" fill="url(#skinTone)" />
+  </g>
+
+  <!-- Hair Back / Base behind shoulders -->
+  <g id="hair-back">
+    <!-- Chic shoulder-length layered dark bob -->
+    <path d="M228 200 C210 240, 205 310, 215 370 C220 400, 225 415, 235 430 C242 430, 246 395, 245 360 C245 310, 240 250, 236 210 Z" fill="url(#hairDark)" />
+    <path d="M372 200 C390 240, 395 310, 385 370 C380 400, 375 415, 365 430 C358 430, 354 395, 355 360 C355 310, 360 250, 364 210 Z" fill="url(#hairDark)" />
+  </g>
+
+  <!-- 8. DETAILED FACIAL FEATURES (GENUINE WARM SMILE, BRIGHT RADIANT EYES) -->
+  <g id="facial-features">
+    <!-- Cheeks delicate rosy blush -->
+    <ellipse cx="258" cy="265" rx="18" ry="12" fill="#FA8072" opacity="0.18" />
+    <ellipse cx="342" cy="265" rx="18" ry="12" fill="#FA8072" opacity="0.18" />
+
+    <!-- Eyebrows: Soft natural arch, well-groomed -->
+    <path d="M250 216 Q266 208 282 214" stroke="#2B2628" stroke-width="3.2" stroke-linecap="round" fill="none" />
+    <path d="M318 214 Q334 208 350 216" stroke="#2B2628" stroke-width="3.2" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes: Radiant, smiling crescent with joyful crinkle (cười rạng rỡ) -->
+    <!-- Left Eye -->
+    <path d="M250 234 Q266 226 282 233" stroke="#241E20" stroke-width="2.6" fill="none" stroke-linecap="round" />
+    <path d="M252 234 Q266 244 280 234" stroke="#7A6055" stroke-width="1.2" fill="none" />
+    <!-- Iris & pupil shining -->
+    <ellipse cx="266" cy="233" rx="5.5" ry="4.5" fill="#241E20" />
+    <circle cx="268" cy="231" r="1.8" fill="#FFFFFF" />
+    <circle cx="264" cy="234" r="0.8" fill="#FFFFFF" opacity="0.7" />
+
+    <!-- Right Eye -->
+    <path d="M318 233 Q334 226 350 234" stroke="#241E20" stroke-width="2.6" fill="none" stroke-linecap="round" />
+    <path d="M320 234 Q334 244 348 234" stroke="#7A6055" stroke-width="1.2" fill="none" />
+    <!-- Iris & pupil shining -->
+    <ellipse cx="334" cy="233" rx="5.5" ry="4.5" fill="#241E20" />
+    <circle cx="336" cy="231" r="1.8" fill="#FFFFFF" />
+    <circle cx="332" cy="234" r="0.8" fill="#FFFFFF" opacity="0.7" />
+
+    <!-- Nose: Refined, natural bridge -->
+    <path d="M298 220 L297 258 Q299 265 304 263" stroke="#DC9E82" stroke-width="2" fill="none" stroke-linecap="round" />
+    <ellipse cx="291" cy="265" rx="3.5" ry="2" fill="#DC9E82" opacity="0.4" />
+    <ellipse cx="308" cy="265" rx="3.5" ry="2" fill="#DC9E82" opacity="0.4" />
+
+    <!-- Smiling Mouth: Authentic bright smile showing neat white teeth -->
+    <!-- Lip contour -->
+    <path d="M266 285 Q300 285 334 285 Q300 318 266 285 Z" fill="url(#lipTone)" />
+    <!-- Upper lip line -->
+    <path d="M266 285 Q283 282 300 286 Q317 282 334 285" stroke="#9E2B37" stroke-width="1.8" fill="none" />
+    <!-- Inner mouth cavity (warm dark red) -->
+    <path d="M272 288 Q300 290 328 288 Q300 312 272 288 Z" fill="#6B1A22" />
+    <!-- Bright white, neat smiling teeth -->
+    <path d="M274 287 Q300 289 326 287 C324 298, 276 298, 274 287 Z" fill="#FFFFFF" />
+    <line x1="300" y1="287" x2="300" y2="295" stroke="#EBE0D8" stroke-width="0.8" />
+    <!-- Smile creases (joyful expression) -->
+    <path d="M256 270 Q252 285 262 298" stroke="#DC9E82" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.6" />
+    <path d="M344 270 Q348 285 338 298" stroke="#DC9E82" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.6" />
+  </g>
+
+  <!-- 9. HAIR FOREGROUND (VOLUME, SIDE-SWEPT FRINGE & LUSTROUS FLOW) -->
+  <g id="hair-front">
+    <!-- Left volume and sleek tuck behind ear -->
+    <path d="M290 142 C240 142, 215 175, 215 235 C215 275, 222 315, 225 365 C232 360, 238 310, 238 270 C238 220, 255 170, 290 142 Z" fill="url(#hairDark)" />
+    
+    <!-- Deep side part across forehead (authentic Ms Hương hairstyle) -->
+    <path d="M270 145 C320 145, 375 165, 375 235 C375 285, 365 340, 360 380 C352 380, 350 330, 350 280 C350 230, 335 180, 270 145 Z" fill="url(#hairDark)" />
+
+    <!-- Soft side fringe sweeping across temple -->
+    <path d="M260 146 C275 165, 280 185, 260 215 C250 205, 250 175, 260 146 Z" fill="#201C1E" />
+    <path d="M270 146 C300 170, 315 190, 305 210 C295 190, 290 165, 270 146 Z" fill="#282325" />
+
+    <!-- Glossy hair sheen reflection -->
+    <path d="M245 180 C265 155, 330 155, 355 180" stroke="#4A4246" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.45" />
+  </g>
+
+  <!-- 10. FOREGROUND LUXURY TABLE MARBLE EDGE -->
+  <g id="marble-table-edge">
+    <path d="M0 765 L600 765 L600 800 L0 800 Z" fill="url(#stoneTable)" opacity="0.95" />
+    <line x1="0" y1="765" x2="600" y2="765" stroke="#F6EFE6" stroke-width="2" />
+    <!-- Table shadow -->
+    <line x1="0" y1="767" x2="600" y2="767" stroke="#A6957F" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- 11. GOLD SIGNATURE BADGE (MATCHING THE ORIGINAL CARD) -->
+  <g id="luxury-gold-pill" transform="translate(300, 755)">
+    <!-- Pill background with gradient and border -->
+    <rect x="-140" y="-22" width="280" height="44" rx="22" fill="#2B2117" stroke="url(#goldLuxury)" stroke-width="2" filter="url(#softGlow)" />
+    <!-- Inner glowing ring -->
+    <rect x="-136" y="-18" width="272" height="36" rx="18" fill="#1C140D" stroke="#684C23" stroke-width="1" />
+    
+    <!-- Phone icon & text -->
+    <circle cx="-100" cy="0" r="11" fill="url(#goldLuxury)" />
+    <path d="M-104 -4 C-104 -4, -104 -2, -102 0 C-100 2, -98 4, -96 4 C-95 4, -95 3, -96 2 C-97 1, -97 0, -96 -1 C-95 -2, -96 -3, -97 -4 C-98 -5, -99 -5, -100 -4 Z" fill="#1C140D" />
+    
+    <text x="-80" y="5" fill="#FFE8A3" font-family="'Be Vietnam Pro', sans-serif" font-weight="800" font-size="14" letter-spacing="1.5">0979.289.198</text>
+    <text x="32" y="5" fill="#D6A645" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="12">| KẾT NỐI NGAY</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="logoBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18C8FF" />
+      <stop offset="100%" stop-color="#168BFF" />
+    </linearGradient>
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC21C" />
+      <stop offset="100%" stop-color="#FFB800" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Emblem -->
+  <g transform="translate(10, 12)">
+    <rect width="56" height="56" rx="16" fill="#08065B" stroke="#2774FF" stroke-width="2" />
+    <circle cx="28" cy="28" r="16" fill="#168BFF" fill-opacity="0.2" />
+    <!-- AI Brain / Circuit Nodes -->
+    <path d="M18 28 L24 18 L34 18 L38 28 L34 38 L24 38 Z" stroke="url(#logoBlue)" stroke-width="2.5" fill="none" />
+    <circle cx="28" cy="28" r="4.5" fill="url(#logoGold)" />
+    <circle cx="24" cy="18" r="2.5" fill="#18C8FF" />
+    <circle cx="34" cy="18" r="2.5" fill="#18C8FF" />
+    <circle cx="38" cy="28" r="2.5" fill="#18C8FF" />
+    <circle cx="34" cy="38" r="2.5" fill="#18C8FF" />
+    <circle cx="24" cy="38" r="2.5" fill="#18C8FF" />
+  </g>
+
+  <!-- Typography -->
+  <text x="78" y="38" fill="#FFFFFF" font-family="'Be Vietnam Pro', sans-serif" font-weight="900" font-size="22" letter-spacing="1.5">
+    MS HƯƠNG <tspan fill="url(#logoBlue)">AI</tspan>
+  </text>
+  <text x="78" y="56" fill="#18C8FF" font-family="'Be Vietnam Pro', sans-serif" font-weight="700" font-size="9.5" letter-spacing="1">
+    ỨNG DỤNG AI &amp; CÔNG NGHỆ THỰC CHIẾN
+  </text>
+</svg>

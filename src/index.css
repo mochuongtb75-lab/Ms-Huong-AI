@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color-scheme: dark;
+  }
+}
+
+/* Custom glow and borders matching reference design */
+.brand-glow {
+  box-shadow: 0 0 25px rgba(24, 139, 255, 0.25);
+}
+
+.brand-glow-gold {
+  box-shadow: 0 0 25px rgba(255, 184, 0, 0.25);
+}
+
+.border-brand {
+  border-color: rgba(39, 116, 255, 0.45);
+}
+
+.border-brand-gold {
+  border-color: rgba(255, 184, 0, 0.6);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050447;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #168BFF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #18C8FF;
+}

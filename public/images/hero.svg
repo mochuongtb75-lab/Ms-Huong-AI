@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#168BFF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#050447" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="600" fill="#050447" />
+  <circle cx="600" cy="300" r="400" fill="url(#heroGlow)" />
+  <g opacity="0.15" stroke="#18C8FF" stroke-width="1">
+    <path d="M0 100 H1200 M0 200 H1200 M0 300 H1200 M0 400 H1200 M0 500 H1200" />
+    <path d="M200 0 V600 M400 0 V600 M600 0 V600 M800 0 V600 M1000 0 V600" />
+  </g>
+</svg>
